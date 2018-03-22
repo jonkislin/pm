@@ -3,5 +3,5 @@
 // };
 
 export default {
-  dataUrl: '//raw.githubusercontent.com/jonkislin/galactic-data/
+  dataUrl: '//raw.githubusercontent.com/jonkislin/galactic-data/trump/'
 };
