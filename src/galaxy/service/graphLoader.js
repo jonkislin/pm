@@ -39,7 +39,7 @@ function loadGraph(name, progress) {
   var inLinks = [];
 
   // todo: handle errors
-  var manifestEndpoint = config.dataUrl + name;
+  var manifestEndpoint = config.dataUrl // + name;
   var galaxyEndpoint = manifestEndpoint;
 
   var manifest;
@@ -173,7 +173,7 @@ function loadGraph(name, progress) {
   }
 
   function reportProgress(name, file) {
-    return function(e) {
+    return function (e) {
       progress({
         message: name + ': downloading ' + file,
         completed: Math.round(e.percent * 100) + '%'
@@ -183,14 +183,14 @@ function loadGraph(name, progress) {
 }
 
 function defer() {
-    var resolve, reject;
-    var promise = new Promise(function() {
-        resolve = arguments[0];
-        reject = arguments[1];
-    });
-    return {
-        resolve: resolve,
-        reject: reject,
-        promise: promise
-    };
+  var resolve, reject;
+  var promise = new Promise(function () {
+    resolve = arguments[0];
+    reject = arguments[1];
+  });
+  return {
+    resolve: resolve,
+    reject: reject,
+    promise: promise
+  };
 }

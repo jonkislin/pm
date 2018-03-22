@@ -1,3 +1,7 @@
+// export default {
+//   dataUrl: '//anvaka.github.io/galactic-data/'
+// };
+
 export default {
-  dataUrl: '//anvaka.github.io/galactic-data/'
+  dataUrl: '//raw.githubusercontent.com/jonkislin/galaxy_data/master/galactic-data/'
 };
